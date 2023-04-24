@@ -15,19 +15,20 @@ public class Print2dArray {
         }
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Value of row: ");
-        int row = sc.nextInt();
-        System.out.print("Enter Value of col: ");
-        int col = sc.nextInt();
-        int [][] arr = new int[row][col];
-        System.out.println("Enter Values: ");
-        for(int i = 0; i < row; i++) {
-            for(int j = 0; j < col; j++) {
-                arr[i][j] = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter Value of row: ");
+            int row = sc.nextInt();
+            System.out.print("Enter Value of col: ");
+            int col = sc.nextInt();
+            int [][] arr = new int[row][col];
+            System.out.println("Enter Values: ");
+            for(int i = 0; i < row; i++) {
+                for(int j = 0; j < col; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
             }
+            System.out.println("Output: ");
+            print2dArray(arr);
         }
-        System.out.println("Output: ");
-        print2dArray(arr);
     }
 }
