@@ -1,2 +1,2 @@
-# Coding-Ninjas-Competitive-Programming
+# Competitive-Programming
 This repository contains solution of all problems of Coding Ninjas' Competitive Programming course.
